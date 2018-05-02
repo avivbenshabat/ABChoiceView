@@ -20,7 +20,6 @@
                 <outlet property="label" destination="mRS-84-lJV" id="eOO-vD-wuV"/>
                 <outlet property="labelHeightConstraint" destination="4uh-mp-xfX" id="sIg-VG-lHJ"/>
                 <outlet property="labelToImageConstraint" destination="oh2-Bo-fdH" id="JMO-7Q-WKZ"/>
-                <outlet property="tapRecognizer" destination="7uG-Ok-Eie" id="Sem-Ae-pje"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
