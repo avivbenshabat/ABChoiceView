@@ -6,6 +6,8 @@
 //  Copyright © 2018 Aviv Ben Shabat. All rights reserved.
 //
 
-public enum BorderPolicy {
-    case noDashes, alwaysDashed, dashedWhenUnchecked
+public enum BorderPolicy: String {
+    case noDashes = "No Dashes" ,
+    alwaysDashed = "Always Dashed" ,
+    dashedWhenUnchecked = "Dashed When Unchecked"
 }

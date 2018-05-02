@@ -13,9 +13,63 @@ class ExampleViewController: UIViewController {
 
     @IBOutlet var choiceView: ChoiceView!
     
+    var currentState = State.apple
+    
+    enum State {
+        case apple, shark
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    @IBAction func toggleMask(_ sender: UIButton) {
+        choiceView.maskWhenChecked = !choiceView.maskWhenChecked
+    }
+    
+    @IBAction func switchImageAndText(_ sender: UIButton) {
+        if currentState == .apple {
+            choiceView.image = UIImage(named: "shark")
+            choiceView.text = "Shark"
+            currentState = .shark
+        } else {
+            choiceView.image = UIImage(named: "apple")
+            choiceView.text = "Apple"
+            currentState = .apple
+        }
+    }
+    
+    @IBAction func changeFont(_ sender: UIButton) {
+        let systemFont = sender.tag == 0
+        choiceView.font = systemFont ? UIFont(name: "Courier", size: 30.0) : UIFont.systemFont(ofSize: 20.0, weight: .light)
+        sender.tag = systemFont ? 1 : 0
+    }
+    
+    @IBAction func changeCheckIcon(_ sender: UIButton) {
+        let defaultIcon = sender.tag == 0
+        choiceView.checkImage = defaultIcon ? UIImage(named: "check_x") : nil
+        sender.tag = defaultIcon ? 1 : 0
+    }
+    
+    @IBAction func removeImage(_ sender: UIButton) {
+        choiceView.image = nil
+    }
+    
+    @IBAction func removeText(_ sender: UIButton) {
+        choiceView.text = nil
+    }
+    
+    @IBAction func changeBorder(_ sender: UIButton) {
+        switch choiceView.borderPolicy {
+        case .alwaysDashed:
+            choiceView.borderPolicy = .dashedWhenUnchecked
+        case .dashedWhenUnchecked:
+            choiceView.borderPolicy = .noDashes
+        case .noDashes:
+            choiceView.borderPolicy = .alwaysDashed
+        }
+        sender.setTitle("Change Border (Now - \(choiceView.borderPolicy.rawValue))", for: .normal)
     }
 }
 

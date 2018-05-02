@@ -29,18 +29,25 @@ open class ChoiceView: UIView {
     @IBInspectable open var image: UIImage? {
         didSet {
             self.imageView.image = image
+            setNeedsUpdateConstraints()
         }
     }
     
     @IBInspectable open var checkImage: UIImage? {
-        didSet {
-            self.checkImageView.image = checkImage
+        willSet {
+            if let newImage = newValue {
+                self.checkImageView.image = newImage
+            } else {
+                let bundle = Bundle(for: ChoiceView.self)
+                self.checkImageView.image = UIImage(named: "check", in: bundle, compatibleWith: nil)
+            }
         }
     }
     
     @IBInspectable open var text: String? {
         set {
             self.label.text = newValue
+            setNeedsUpdateConstraints()
         }
         get {
             return self.label.text
@@ -118,12 +125,10 @@ open class ChoiceView: UIView {
     }
 
     open override func updateConstraints() {
-        if text == nil || text!.isEmpty {
-            labelToImageConstraint.isActive = false
-        } else if image == nil {
-            labelToImageConstraint.isActive = false
-            labelHeightConstraint.isActive = false
-        }
+        let hasText = text != nil && text!.isNotEmpty
+        let hasImage = image != nil
+        labelToImageConstraint.isActive = hasText && hasImage
+        labelHeightConstraint.isActive = hasImage
         super.updateConstraints()
     }
     

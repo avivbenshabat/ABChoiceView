@@ -16,6 +16,13 @@ extension UIView {
     }
 }
 
+extension String {
+    
+    var isNotEmpty: Bool {
+        return !self.isEmpty
+    }
+}
+
 // Taken from https://github.com/instamobile/swift-tutorials/blob/master/UIColor%2BHex.swift
 extension UIColor {
     

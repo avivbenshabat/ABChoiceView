@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prn-H7-o8u" customClass="ChoiceView" customModule="ABChoiceView">
-                                <rect key="frame" x="97" y="253.5" width="180" height="180"/>
+                                <rect key="frame" x="97" y="120" width="180" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="WKy-9x-Qm0"/>
@@ -28,15 +28,73 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="apple"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="Apple"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskWhenChecked" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="maskWhenChecked" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-RC-tGA">
+                                <rect key="frame" x="40" y="340" width="178" height="287"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-dJ-z7U">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Set Mask (when checked)"/>
+                                        <connections>
+                                            <action selector="toggleMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfY-sx-LoA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA8-Wb-JQc">
+                                        <rect key="frame" x="0.0" y="41" width="140" height="41"/>
+                                        <state key="normal" title="Switch Image &amp; Text"/>
+                                        <connections>
+                                            <action selector="switchImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L12-l9-gSj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-tR-Yjw">
+                                        <rect key="frame" x="0.0" y="82" width="161" height="41"/>
+                                        <state key="normal" title="Change font &amp; font size"/>
+                                        <connections>
+                                            <action selector="changeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xh-eZ-rrF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAn-S4-Rd8">
+                                        <rect key="frame" x="0.0" y="123" width="134" height="41"/>
+                                        <state key="normal" title="Change Check Icon"/>
+                                        <connections>
+                                            <action selector="changeCheckIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8w-Wy-YHy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-jO-eiX">
+                                        <rect key="frame" x="0.0" y="164" width="101" height="41"/>
+                                        <state key="normal" title="Remove Image"/>
+                                        <connections>
+                                            <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0V-4f-Q3E"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty4-zd-1wB">
+                                        <rect key="frame" x="0.0" y="205" width="88" height="41"/>
+                                        <state key="normal" title="Remove Text"/>
+                                        <connections>
+                                            <action selector="removeText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXh-zO-o1w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HQ-oZ-uvT">
+                                        <rect key="frame" x="0.0" y="246" width="104" height="41"/>
+                                        <state key="normal" title="Change Border"/>
+                                        <connections>
+                                            <action selector="changeBorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fh-Ky-w3Z"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="e5l-RC-tGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HY3-gT-85W"/>
+                            <constraint firstItem="e5l-RC-tGA" firstAttribute="top" secondItem="prn-H7-o8u" secondAttribute="bottom" constant="40" id="KJq-ha-CzE"/>
                             <constraint firstItem="prn-H7-o8u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N4R-Of-epQ"/>
-                            <constraint firstItem="prn-H7-o8u" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ewc-zu-lCY"/>
+                            <constraint firstItem="prn-H7-o8u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="qFk-hL-wWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e5l-RC-tGA" secondAttribute="bottom" constant="40" id="qc2-4T-Dve"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
