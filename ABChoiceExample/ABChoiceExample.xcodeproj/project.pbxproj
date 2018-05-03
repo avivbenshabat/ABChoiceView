@@ -532,7 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
-				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/";
 				INFOPLIST_FILE = ABChoiceExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,7 +554,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
-				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS/";
 				INFOPLIST_FILE = ABChoiceExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,7 +575,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
-				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = ABChoiceExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,7 +595,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
-				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = ABChoiceExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
