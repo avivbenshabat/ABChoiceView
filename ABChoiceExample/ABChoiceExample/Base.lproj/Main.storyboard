@@ -21,6 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prn-H7-o8u" customClass="ChoiceView" customModule="ABChoiceView">
                                 <rect key="frame" x="97" y="120" width="180" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ChoiceViewID"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="WKy-9x-Qm0"/>
                                     <constraint firstAttribute="height" constant="180" id="dRj-u4-tAb"/>
@@ -35,19 +36,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-RC-tGA">
                                 <rect key="frame" x="40" y="340" width="178" height="287"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA8-Wb-JQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="41"/>
+                                        <state key="normal" title="Switch Image &amp; Text"/>
+                                        <connections>
+                                            <action selector="switchImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L12-l9-gSj"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-dJ-z7U">
-                                        <rect key="frame" x="0.0" y="0.0" width="178" height="41"/>
+                                        <rect key="frame" x="0.0" y="41" width="178" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Set Mask (when checked)"/>
                                         <connections>
                                             <action selector="toggleMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfY-sx-LoA"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA8-Wb-JQc">
-                                        <rect key="frame" x="0.0" y="41" width="140" height="41"/>
-                                        <state key="normal" title="Switch Image &amp; Text"/>
-                                        <connections>
-                                            <action selector="switchImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L12-l9-gSj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-tR-Yjw">

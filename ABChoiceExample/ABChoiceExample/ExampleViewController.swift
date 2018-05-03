@@ -13,15 +13,10 @@ class ExampleViewController: UIViewController {
 
     @IBOutlet var choiceView: ChoiceView!
     
-    var currentState = State.apple
+    var currentState: State = .apple
     
-    enum State {
-        case apple, shark
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    enum State: String {
+        case apple = "apple", shark = "shark"
     }
     
     @IBAction func toggleMask(_ sender: UIButton) {
