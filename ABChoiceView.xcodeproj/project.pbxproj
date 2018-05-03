@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08062CA22094B1E200984660 /* ABChoiceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08062C982094B1E200984660 /* ABChoiceView.framework */; };
-		08062CA72094B1E200984660 /* ABChoiceViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08062CA62094B1E200984660 /* ABChoiceViewTests.swift */; };
 		08062CA92094B1E200984660 /* ABChoiceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08062C9B2094B1E200984660 /* ABChoiceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08E906252095B53400689FFA /* BorderPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906242095B53400689FFA /* BorderPolicy.swift */; };
 		08E906272095B56E00689FFA /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906262095B56E00689FFA /* ChoiceView.swift */; };
@@ -17,29 +15,12 @@
 		08E9062D2095B57700689FFA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E9062A2095B57700689FFA /* Utils.swift */; };
 		08E9062F2095B58400689FFA /* ChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08E9062E2095B58400689FFA /* ChoiceView.xib */; };
 		08E906312095B5E300689FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08E906302095B5E300689FFA /* Assets.xcassets */; };
-		08E9065F2095C0FD00689FFA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E9065E2095C0FD00689FFA /* Nimble.framework */; };
-		08E906612095C0FD00689FFA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E906602095C0FD00689FFA /* Quick.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		08062CA32094B1E200984660 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 08062C8F2094B1E200984660 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 08062C972094B1E200984660;
-			remoteInfo = ABChoiceView;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08062C982094B1E200984660 /* ABChoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABChoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08062C9B2094B1E200984660 /* ABChoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABChoiceView.h; sourceTree = "<group>"; };
 		08062C9C2094B1E200984660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08062CA12094B1E200984660 /* ABChoiceViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABChoiceViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08062CA62094B1E200984660 /* ABChoiceViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABChoiceViewTests.swift; sourceTree = "<group>"; };
-		08062CA82094B1E200984660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08062CB32094BB1B00984660 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08062CB52094BB2300984660 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E906242095B53400689FFA /* BorderPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderPolicy.swift; sourceTree = "<group>"; };
 		08E906262095B56E00689FFA /* ChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		08E906282095B57700689FFA /* DashBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBorderView.swift; sourceTree = "<group>"; };
@@ -47,10 +28,6 @@
 		08E9062A2095B57700689FFA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		08E9062E2095B58400689FFA /* ChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChoiceView.xib; sourceTree = "<group>"; };
 		08E906302095B5E300689FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		08E906322095BFEB00689FFA /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08E906342095BFEF00689FFA /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08E9065E2095C0FD00689FFA /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08E906602095C0FD00689FFA /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08062C9E2094B1E200984660 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08E9065F2095C0FD00689FFA /* Nimble.framework in Frameworks */,
-				08E906612095C0FD00689FFA /* Quick.framework in Frameworks */,
-				08062CA22094B1E200984660 /* ABChoiceView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				08062C9A2094B1E200984660 /* ABChoiceView */,
-				08062CA52094B1E200984660 /* ABChoiceViewTests */,
 				08062C992094B1E200984660 /* Products */,
 				08062CB22094BB1B00984660 /* Frameworks */,
 			);
@@ -88,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				08062C982094B1E200984660 /* ABChoiceView.framework */,
-				08062CA12094B1E200984660 /* ABChoiceViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,24 +72,9 @@
 			path = ABChoiceView;
 			sourceTree = "<group>";
 		};
-		08062CA52094B1E200984660 /* ABChoiceViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				08062CA62094B1E200984660 /* ABChoiceViewTests.swift */,
-				08062CA82094B1E200984660 /* Info.plist */,
-			);
-			path = ABChoiceViewTests;
-			sourceTree = "<group>";
-		};
 		08062CB22094BB1B00984660 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				08E9065E2095C0FD00689FFA /* Nimble.framework */,
-				08E906602095C0FD00689FFA /* Quick.framework */,
-				08E906342095BFEF00689FFA /* Quick.framework */,
-				08E906322095BFEB00689FFA /* Nimble.framework */,
-				08062CB52094BB2300984660 /* Quick.framework */,
-				08062CB32094BB1B00984660 /* Nimble.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -179,24 +129,6 @@
 			productReference = 08062C982094B1E200984660 /* ABChoiceView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		08062CA02094B1E200984660 /* ABChoiceViewTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 08062CAF2094B1E200984660 /* Build configuration list for PBXNativeTarget "ABChoiceViewTests" */;
-			buildPhases = (
-				08062C9D2094B1E200984660 /* Sources */,
-				08062C9E2094B1E200984660 /* Frameworks */,
-				08062C9F2094B1E200984660 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				08062CA42094B1E200984660 /* PBXTargetDependency */,
-			);
-			name = ABChoiceViewTests;
-			productName = ABChoiceViewTests;
-			productReference = 08062CA12094B1E200984660 /* ABChoiceViewTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,9 +142,6 @@
 					08062C972094B1E200984660 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
-					};
-					08062CA02094B1E200984660 = {
-						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -229,7 +158,6 @@
 			projectRoot = "";
 			targets = (
 				08062C972094B1E200984660 /* ABChoiceView */,
-				08062CA02094B1E200984660 /* ABChoiceViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +169,6 @@
 			files = (
 				08E906312095B5E300689FFA /* Assets.xcassets in Resources */,
 				08E9062F2095B58400689FFA /* ChoiceView.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		08062C9F2094B1E200984660 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,23 +187,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08062C9D2094B1E200984660 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08062CA72094B1E200984660 /* ABChoiceViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		08062CA42094B1E200984660 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 08062C972094B1E200984660 /* ABChoiceView */;
-			targetProxy = 08062CA32094B1E200984660 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08062CAA2094B1E200984660 /* Debug */ = {
@@ -458,44 +363,6 @@
 			};
 			name = Release;
 		};
-		08062CB02094B1E200984660 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MWXNT78G96;
-				INFOPLIST_FILE = ABChoiceViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = AvivBenShabat.ABChoiceViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		08062CB12094B1E200984660 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MWXNT78G96;
-				INFOPLIST_FILE = ABChoiceViewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = AvivBenShabat.ABChoiceViewTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,15 +380,6 @@
 			buildConfigurations = (
 				08062CAD2094B1E200984660 /* Debug */,
 				08062CAE2094B1E200984660 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		08062CAF2094B1E200984660 /* Build configuration list for PBXNativeTarget "ABChoiceViewTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				08062CB02094B1E200984660 /* Debug */,
-				08062CB12094B1E200984660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
