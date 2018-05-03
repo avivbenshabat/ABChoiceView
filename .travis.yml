@@ -10,4 +10,4 @@ before_install:
   - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
 
 script:
-  - xcodebuild test -sdk iphonesimulator -workspace ABChoiceView.xcworkspace -scheme ABChoiceExampleTests -destination 'platform=iOS Simulator,name=iPhone 8'
+  - xcodebuild clean test -sdk iphonesimulator -workspace ABChoiceView.xcworkspace -scheme ABChoiceExample -destination 'platform=iOS Simulator,name=iPhone 8' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
