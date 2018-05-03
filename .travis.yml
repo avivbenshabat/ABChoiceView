@@ -5,5 +5,5 @@ os: osx
 install:
   - carthage bootstrap --platform ios
 
-xcode_project: ABChoiceExample/ABChoiceExample.xcodeproj
-xcode_scheme: ABChoiceExampleTests
+script:
+  - xcodebuild test -sdk iphonesimulator -workspace ABChoiceView.xcworkspace -scheme ABChoiceExampleTests -destination 'platform=iOS Simutor,name=iPhone 8'
