@@ -18,12 +18,21 @@
 		0860A86A2095E3AA00C53ABC /* ABChoiceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0860A8682095E3AA00C53ABC /* ABChoiceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08FA78A72098592C00BDFA4F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; };
 		08FA78A82098592C00BDFA4F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; };
-		08FA78AA2098593C00BDFA4F /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		08FA78AB2098593C00BDFA4F /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78AA2098593C00BDFA4F /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78AB2098593C00BDFA4F /* Quick.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08FA78AE209861A900BDFA4F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */; };
 		08FA78AF209861A900BDFA4F /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; };
-		08FA78BA2098684200BDFA4F /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		08FA78BB2098684200BDFA4F /* Nimble_Snapshots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78BA2098684200BDFA4F /* FBSnapshotTestCase.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78BB2098684200BDFA4F /* Nimble_Snapshots.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78C12099F0D400BDFA4F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; };
+		08FA78C22099F0D800BDFA4F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; };
+		08FA78C32099F0DD00BDFA4F /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */; };
+		08FA78C42099F0E000BDFA4F /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; };
+		08FA78CA2099F1C600BDFA4F /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78CB2099F1C600BDFA4F /* Nimble_Snapshots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78CC2099F1C600BDFA4F /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78CD2099F1C600BDFA4F /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		08FA78D0209A084700BDFA4F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A8302095E20100C53ABC /* ExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,16 +64,30 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08FA78A92098593100BDFA4F /* CopyFiles */ = {
+		08FA78A92098593100BDFA4F /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				08FA78BA2098684200BDFA4F /* FBSnapshotTestCase.framework in CopyFiles */,
-				08FA78BB2098684200BDFA4F /* Nimble_Snapshots.framework in CopyFiles */,
-				08FA78AA2098593C00BDFA4F /* Nimble.framework in CopyFiles */,
-				08FA78AB2098593C00BDFA4F /* Quick.framework in CopyFiles */,
+				08FA78BA2098684200BDFA4F /* FBSnapshotTestCase.framework in Copy Files */,
+				08FA78BB2098684200BDFA4F /* Nimble_Snapshots.framework in Copy Files */,
+				08FA78AA2098593C00BDFA4F /* Nimble.framework in Copy Files */,
+				08FA78AB2098593C00BDFA4F /* Quick.framework in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08FA78C92099F1B900BDFA4F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08FA78CA2099F1C600BDFA4F /* FBSnapshotTestCase.framework in CopyFiles */,
+				08FA78CB2099F1C600BDFA4F /* Nimble_Snapshots.framework in CopyFiles */,
+				08FA78CC2099F1C600BDFA4F /* Nimble.framework in CopyFiles */,
+				08FA78CD2099F1C600BDFA4F /* Quick.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +138,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FA78C22099F0D800BDFA4F /* Quick.framework in Frameworks */,
+				08FA78C32099F0DD00BDFA4F /* FBSnapshotTestCase.framework in Frameworks */,
+				08FA78C12099F0D400BDFA4F /* Nimble.framework in Frameworks */,
+				08FA78C42099F0E000BDFA4F /* Nimble_Snapshots.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +240,7 @@
 				0860A83B2095E20400C53ABC /* Sources */,
 				0860A83C2095E20400C53ABC /* Frameworks */,
 				0860A83D2095E20400C53ABC /* Resources */,
-				08FA78A92098593100BDFA4F /* CopyFiles */,
+				08FA78A92098593100BDFA4F /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -232,6 +259,7 @@
 				0860A8462095E20400C53ABC /* Sources */,
 				0860A8472095E20400C53ABC /* Frameworks */,
 				0860A8482095E20400C53ABC /* Resources */,
+				08FA78C92099F1B900BDFA4F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -327,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08FA78D0209A084700BDFA4F /* ExampleViewController.swift in Sources */,
 				0860A8442095E20400C53ABC /* ABChoiceExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +603,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
+				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = ABChoiceExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,6 +624,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
+				FRAMEWORK_SEARCH_PATHS = "/Users/aviv/Aviv/ABChoiceview/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = ABChoiceExampleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
