@@ -32,7 +32,6 @@
 		08FA78CB2099F1C600BDFA4F /* Nimble_Snapshots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA78AD209861A900BDFA4F /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08FA78CC2099F1C600BDFA4F /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08FA78CD2099F1C600BDFA4F /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		08FA78D0209A084700BDFA4F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A8302095E20100C53ABC /* ExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,7 +354,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08FA78D0209A084700BDFA4F /* ExampleViewController.swift in Sources */,
 				0860A8442095E20400C53ABC /* ABChoiceExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

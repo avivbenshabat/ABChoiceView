@@ -66,5 +66,16 @@ class ExampleViewController: UIViewController {
         }
         sender.setTitle("Change Border (Now - \(choiceView.borderPolicy.rawValue))", for: .normal)
     }
+    
+    @IBAction func changeMaskData(_ sender: UIButton) {
+        let defaultMask = sender.tag == 0
+        choiceView.maskWhenChecked = true
+        if defaultMask {
+            choiceView.maskData = DiagonalBackgroundView.Data(lineWidth: 8.0, spacing: 4.0, lineColor: UIColor(hexString: "#868686", alpha: 0.7), backgroundColor: UIColor(hexString: "#C8C8C8", alpha: 0.5))
+        } else {
+            choiceView.maskData = ChoiceView.defaultCoverBackgroundData
+        }
+        sender.tag = defaultMask ? 1 : 0
+    }
 }
 

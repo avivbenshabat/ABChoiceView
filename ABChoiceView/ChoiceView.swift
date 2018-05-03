@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 open class ChoiceView: UIView {
 
-    let defaultCoverBackgroundData = DiagonalBackgroundView.Data(lineWidth: 2.0, spacing: 4.0, lineColor: UIColor(hexString: "9b9ea0", alpha: 0.4), backgroundColor: UIColor(hexString: "eaeae6", alpha: 0.6))
+    public static let defaultCoverBackgroundData = DiagonalBackgroundView.Data(lineWidth: 2.0, spacing: 4.0, lineColor: UIColor(hexString: "9b9ea0", alpha: 0.4), backgroundColor: UIColor(hexString: "eaeae6", alpha: 0.6))
 
     // MARK: Views
     
@@ -23,6 +23,7 @@ open class ChoiceView: UIView {
     @IBOutlet var labelHeightConstraint: NSLayoutConstraint!
     
     var diagonalMaskView: DiagonalBackgroundView?
+    var allowOpaqueMask = false
     
     // MARK: Inspectable properties
     
@@ -57,7 +58,7 @@ open class ChoiceView: UIView {
     @IBInspectable open var maskWhenChecked: Bool = false {
         didSet {
             if maskData == nil {
-                maskData = defaultCoverBackgroundData
+                maskData = ChoiceView.defaultCoverBackgroundData
             }
             setNeedsLayout()
         }
@@ -98,6 +99,9 @@ open class ChoiceView: UIView {
             } else {
                 diagonalMaskView = DiagonalBackgroundView(data: data)
             }
+            if !allowOpaqueMask, let backgroundAlpha = diagonalMaskView?.data.backgroundColor.cgColor.alpha, backgroundAlpha == 1 {
+                print(ChoiceView.description(), "Background color set for mask has no opacity. The image will not show. Add opacity to background color.\nSet allowOpaqueMask to true in order to get rid of this warning")
+            }
         }
         get {
             return diagonalMaskView?.data
@@ -128,7 +132,7 @@ open class ChoiceView: UIView {
         let hasText = text != nil && text!.isNotEmpty
         let hasImage = image != nil
         labelToImageConstraint.isActive = hasText && hasImage
-        labelHeightConstraint.isActive = hasImage
+        labelHeightConstraint.isActive = hasText && hasImage
         super.updateConstraints()
     }
     

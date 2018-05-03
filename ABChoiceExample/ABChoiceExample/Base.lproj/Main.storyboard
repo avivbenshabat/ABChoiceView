@@ -37,14 +37,14 @@
                                 <rect key="frame" x="40" y="340" width="178" height="287"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kA8-Wb-JQc">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="36"/>
                                         <state key="normal" title="Switch Image &amp; Text"/>
                                         <connections>
                                             <action selector="switchImageAndText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L12-l9-gSj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-dJ-z7U">
-                                        <rect key="frame" x="0.0" y="41" width="178" height="41"/>
+                                        <rect key="frame" x="0.0" y="36" width="178" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Set Mask (when checked)"/>
                                         <connections>
@@ -52,38 +52,45 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-tR-Yjw">
-                                        <rect key="frame" x="0.0" y="82" width="161" height="41"/>
+                                        <rect key="frame" x="0.0" y="72" width="161" height="35.5"/>
                                         <state key="normal" title="Change font &amp; font size"/>
                                         <connections>
                                             <action selector="changeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xh-eZ-rrF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAn-S4-Rd8">
-                                        <rect key="frame" x="0.0" y="123" width="134" height="41"/>
+                                        <rect key="frame" x="0.0" y="107.5" width="134" height="36"/>
                                         <state key="normal" title="Change Check Icon"/>
                                         <connections>
                                             <action selector="changeCheckIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8w-Wy-YHy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOC-jO-eiX">
-                                        <rect key="frame" x="0.0" y="164" width="101" height="41"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="101" height="36"/>
                                         <state key="normal" title="Remove Image"/>
                                         <connections>
                                             <action selector="removeImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0V-4f-Q3E"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ty4-zd-1wB">
-                                        <rect key="frame" x="0.0" y="205" width="88" height="41"/>
+                                        <rect key="frame" x="0.0" y="179.5" width="88" height="36"/>
                                         <state key="normal" title="Remove Text"/>
                                         <connections>
                                             <action selector="removeText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXh-zO-o1w"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HQ-oZ-uvT">
-                                        <rect key="frame" x="0.0" y="246" width="104" height="41"/>
+                                        <rect key="frame" x="0.0" y="215.5" width="104" height="35.5"/>
                                         <state key="normal" title="Change Border"/>
                                         <connections>
                                             <action selector="changeBorder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fh-Ky-w3Z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yes-Gr-Hbf">
+                                        <rect key="frame" x="0.0" y="251" width="130" height="36"/>
+                                        <state key="normal" title="Change Mask Data"/>
+                                        <connections>
+                                            <action selector="changeMaskData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJR-YB-eC9"/>
                                         </connections>
                                     </button>
                                 </subviews>

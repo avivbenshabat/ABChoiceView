@@ -16,7 +16,7 @@ extension UIView {
     }
 }
 
-extension String {
+public extension String {
     
     var isNotEmpty: Bool {
         return !self.isEmpty
@@ -24,7 +24,7 @@ extension String {
 }
 
 // Taken from https://github.com/instamobile/swift-tutorials/blob/master/UIColor%2BHex.swift
-extension UIColor {
+public extension UIColor {
     
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
         let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
