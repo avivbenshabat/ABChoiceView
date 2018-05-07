@@ -121,8 +121,11 @@ open class ChoiceView: UIView {
     }
     
     private func setup() {
-        let nibName = String(describing: type(of: self))
-        contentView = loadView(fromNib: nibName) as! DashBorderView
+        let frameworkBundle = Bundle(for: type(of: self))
+        let bundleURL = frameworkBundle.resourceURL?.appendingPathComponent("ABChoiceView.bundle")
+        let resourceBundle = Bundle(url: bundleURL!)
+        let nib = UINib(nibName: "ChoiceView", bundle: resourceBundle ?? frameworkBundle)
+        contentView = nib.instantiate(withOwner: self, options: nil).first as! DashBorderView
         addSubview(contentView)
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

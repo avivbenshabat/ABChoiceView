@@ -8,14 +8,6 @@
 
 import UIKit
 
-extension UIView {
-    
-    func loadView(fromNib name: String) -> UIView {
-        let nib = UINib(nibName: name, bundle: Bundle(for: type(of: self)))
-        return nib.instantiate(withOwner: self, options: nil).first as! UIView
-    }
-}
-
 public extension String {
     
     var isNotEmpty: Bool {
