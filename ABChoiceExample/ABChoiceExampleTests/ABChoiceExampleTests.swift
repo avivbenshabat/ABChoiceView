@@ -62,7 +62,7 @@ class ABChoiceExampleTests: QuickSpec {
             context("add mask and change check icon") {
                 it("apple dashed border") { // Changes should not affect view because it's unchecked
                     choiceView.maskWhenChecked = true
-                    choiceView.checkImage = #imageLiteral(resourceName: "check_x")
+                    choiceView.checkImage = #imageLiteral(resourceName: "check_x.png")
                     expect(choiceView) == self.capture()
                 }
             }
