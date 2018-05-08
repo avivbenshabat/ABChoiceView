@@ -7,26 +7,4 @@
    <FileRef
       location = "group:ABChoiceExample/ABChoiceExample.xcodeproj">
    </FileRef>
-   <Group
-      location = "container:"
-      name = "DemoImages">
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo0.png">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo1.png">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo2.png">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo3.png">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo4.png">
-      </FileRef>
-      <FileRef
-         location = "group:/Users/aviv/Aviv/ABChoiceview/demo5.png">
-      </FileRef>
-   </Group>
 </Workspace>

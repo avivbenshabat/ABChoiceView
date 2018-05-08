@@ -86,6 +86,12 @@
 		0860A84E2095E20400C53ABC /* ABChoiceExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABChoiceExampleUITests.swift; sourceTree = "<group>"; };
 		0860A8502095E20400C53ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0860A8682095E3AA00C53ABC /* ABChoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABChoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C1123520A1848000E19211 /* demo0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo0.png; path = /Users/aviv/Aviv/ABChoiceview/demo0.png; sourceTree = "<absolute>"; };
+		08C1123620A1848000E19211 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo1.png; path = /Users/aviv/Aviv/ABChoiceview/demo1.png; sourceTree = "<absolute>"; };
+		08C1123720A1848000E19211 /* demo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo2.png; path = /Users/aviv/Aviv/ABChoiceview/demo2.png; sourceTree = "<absolute>"; };
+		08C1123820A1848000E19211 /* demo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo3.png; path = /Users/aviv/Aviv/ABChoiceview/demo3.png; sourceTree = "<absolute>"; };
+		08C1123920A1848000E19211 /* demo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo4.png; path = /Users/aviv/Aviv/ABChoiceview/demo4.png; sourceTree = "<absolute>"; };
+		08C1123A20A1848000E19211 /* demo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo5.png; path = /Users/aviv/Aviv/ABChoiceview/demo5.png; sourceTree = "<absolute>"; };
 		08FA789D209855EB00BDFA4F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		08FA789E209855EB00BDFA4F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		08FA78AC209861A900BDFA4F /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = ../Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				0860A84D2095E20400C53ABC /* ABChoiceExampleUITests */,
 				0860A82C2095E20100C53ABC /* Products */,
 				08FA789C209855EB00BDFA4F /* Frameworks */,
+				08C1123B20A1848000E19211 /* DemoImages */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +180,20 @@
 				0860A8502095E20400C53ABC /* Info.plist */,
 			);
 			path = ABChoiceExampleUITests;
+			sourceTree = "<group>";
+		};
+		08C1123B20A1848000E19211 /* DemoImages */ = {
+			isa = PBXGroup;
+			children = (
+				08C1123520A1848000E19211 /* demo0.png */,
+				08C1123620A1848000E19211 /* demo1.png */,
+				08C1123720A1848000E19211 /* demo2.png */,
+				08C1123820A1848000E19211 /* demo3.png */,
+				08C1123920A1848000E19211 /* demo4.png */,
+				08C1123A20A1848000E19211 /* demo5.png */,
+			);
+			name = DemoImages;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		08FA789C209855EB00BDFA4F /* Frameworks */ = {
