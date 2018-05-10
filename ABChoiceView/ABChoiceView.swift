@@ -8,6 +8,10 @@
 
 import UIKit
 
+public protocol ChoiceViewDelegate: class {
+    func onViewStateChange(checked: Bool, id: String?)
+}
+
 @IBDesignable
 open class ABChoiceView: UIView {
     
@@ -23,9 +27,15 @@ open class ABChoiceView: UIView {
     @IBOutlet var labelHeightConstraint: NSLayoutConstraint!
     
     var diagonalMaskView: DiagonalBackgroundView?
-    var allowOpaqueMask = false
+    
+    // MARK: Callbacks
+    
+    open weak var delegate: ChoiceViewDelegate?
+    open var clicked: ((Bool, String?) -> Void)?
     
     // MARK: Inspectable properties
+    
+    @IBInspectable open var id: String?
     
     @IBInspectable open var image: UIImage? {
         didSet {
@@ -108,6 +118,8 @@ open class ABChoiceView: UIView {
         }
     }
     
+    var allowOpaqueMask = false
+    
     // MARK: Init & Setup
     
     override init(frame: CGRect) {
@@ -153,5 +165,8 @@ open class ABChoiceView: UIView {
     
     @IBAction func onClick() {
         self.checked = !self.checked
+        let identifier = self.id ?? self.text
+        clicked?(self.checked, identifier)
+        delegate?.onViewStateChange(checked: self.checked, id: identifier)
     }
 }

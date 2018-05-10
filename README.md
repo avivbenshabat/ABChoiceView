@@ -78,13 +78,58 @@ github "avivbenshabat/ABChoiceView"
 
 ## Usage
 
+### Interface Builder (May not work with Carthage)
+
+Drag a `UIView` into your storyboard. Open the Identity Inspetcor and set `ABChoiceView` as both the class and module.
+
+![ib-demo.gif](https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/autolayouts.png)
 
 
-[default0]: ./DemoImages/demo00.png "Default ChoiceView"
-[default1]: ./DemoImages/demo01.png "Default ChoiceView"
-[selected0]: ./DemoImages/demo02.png "Selected (default)"
-[selected1]: ./DemoImages/demo03.png "Selected with different check icon"
-[selected2]: ./DemoImages/demo04.png "Selected with mask"
-[noImage]: ./DemoImages/demo05.png "No image, only text"
-[noText]: ./DemoImages/demo06.png "No text, only image"
-[small]: ./DemoImages/demo07.png "Small"
+### Code
+
+```swift
+choiceView.image = UIImage(named: "banana")
+choiceView.text = "Banana"
+choiceView.font = UIFont(name: "Courier", size: 18)
+choiceView.checkImage = UIImage(named: "x_icon")
+choiceView.borderPolicy = .noDashes // default is "dashedWhenUnchecked"
+choiceView.maskWhenChecked = true // default is false
+choiceView.maskData = DiagonalBackgroundView.Data(lineWidth: 3.0, spacing: 5.0, lineColor: .gray, backgroundColor: .darkGray)
+```    
+
+You can also set a delegate:
+
+```swift
+choiceView.id = "13"
+choiceView.delegate = self
+```
+
+```swift
+func onViewStateChange(checked: Bool, id: String?) {
+    // Do something...
+}
+```
+
+__OR__ a closure:
+
+```swift
+choiceView.id = "13"
+choiceView.clicked = { [weak self] checked, id in
+    // Do something...
+}
+```
+
+Note: If you don't set an id, the callback will return the view's text as and id. if the view is image-only, it will return `nil`
+
+
+
+### Enjoy
+
+[default0]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo00.png "Default ChoiceView"
+[default1]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo01.png "Default ChoiceView"
+[selected0]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo02.png "Selected (default)"
+[selected1]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo03.png "Selected with different check icon"
+[selected2]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo04.png "Selected with mask"
+[noImage]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo05.png "No image, only text"
+[noText]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo06.png "No text, only image"
+[small]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo07.png "Small"

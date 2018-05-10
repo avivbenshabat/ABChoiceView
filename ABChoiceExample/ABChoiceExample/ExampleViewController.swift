@@ -9,7 +9,7 @@
 import UIKit
 import ABChoiceView
 
-class ExampleViewController: UIViewController {
+class ExampleViewController: UIViewController, ChoiceViewDelegate {
 
     @IBOutlet var choiceView: ABChoiceView!
     
@@ -17,6 +17,15 @@ class ExampleViewController: UIViewController {
     
     enum State: String {
         case apple = "apple", shark = "shark"
+    }
+    
+    override func viewDidLoad() {
+        
+        choiceView.id = "13"
+        
+        choiceView.clicked = { [weak self] checked, id in
+            print("Closure", self?.getMessageForPrint(checked, id) ?? "")
+        }
     }
     
     @IBAction func toggleMask(_ sender: UIButton) {
@@ -76,6 +85,14 @@ class ExampleViewController: UIViewController {
             choiceView.maskData = ABChoiceView.defaultCoverBackgroundData
         }
         sender.tag = defaultMask ? 1 : 0
+    }
+    
+    func onViewStateChange(checked: Bool, id: String?) {
+        print("Delegate", getMessageForPrint(checked, id))
+    }
+    
+    private func getMessageForPrint(_ checked: Bool, _ id: String?) -> String {
+        return "view was just \(checked ? "" : "un")checked \(id == nil ? "" : "[id - \(id!)]")"
     }
 }
 
