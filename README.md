@@ -121,7 +121,7 @@ choiceView.clicked = { [weak self] checked, id in
 
 Note: If you don't set an id, the callback will return the view's text as and id. if the view is image-only, it will return `nil`
 
-#### Special thanks to [Efrat Silberhaft] (https://www.behance.net/efratbarzilai) for the UX/UI design!
+#### Special thanks to [Efrat Silberhaft](https://www.behance.net/efratbarzilai) for the UX/UI design!
 
 ### Enjoy!
 
