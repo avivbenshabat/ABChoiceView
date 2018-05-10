@@ -2,17 +2,17 @@
 //  ABChoiceView.swift
 //  ABChoiceView
 //
-//  Created by Aviv Ben Shabat on 22/04/2018.
+//  Created by Aviv Ben Shabat on 10/05/2018.
 //  Copyright © 2018 Aviv Ben Shabat. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-open class ChoiceView: UIView {
-
+open class ABChoiceView: UIView {
+    
     public static let defaultCoverBackgroundData = DiagonalBackgroundView.Data(lineWidth: 2.0, spacing: 4.0, lineColor: UIColor(hexString: "9b9ea0", alpha: 0.4), backgroundColor: UIColor(hexString: "eaeae6", alpha: 0.6))
-
+    
     // MARK: Views
     
     @IBOutlet var contentView: DashBorderView!
@@ -39,7 +39,7 @@ open class ChoiceView: UIView {
             if let newImage = newValue {
                 self.checkImageView.image = newImage
             } else {
-                let bundle = Bundle(for: ChoiceView.self)
+                let bundle = Bundle(for: ABChoiceView.self)
                 self.checkImageView.image = UIImage(named: "check", in: bundle, compatibleWith: nil)
             }
         }
@@ -58,7 +58,7 @@ open class ChoiceView: UIView {
     @IBInspectable open var maskWhenChecked: Bool = false {
         didSet {
             if maskData == nil {
-                maskData = ChoiceView.defaultCoverBackgroundData
+                maskData = ABChoiceView.defaultCoverBackgroundData
             }
             setNeedsLayout()
         }
@@ -100,7 +100,7 @@ open class ChoiceView: UIView {
                 diagonalMaskView = DiagonalBackgroundView(data: data)
             }
             if !allowOpaqueMask, let backgroundAlpha = diagonalMaskView?.data.backgroundColor.cgColor.alpha, backgroundAlpha == 1 {
-                print(ChoiceView.description(), "Background color set for mask has no opacity. The image will not show. Add opacity to background color.\nSet allowOpaqueMask to true in order to get rid of this warning")
+                print(self.description, "Background color set for mask has no opacity. The image will not show. Add opacity to background color.\nSet allowOpaqueMask to true in order to get rid of this warning")
             }
         }
         get {
@@ -130,7 +130,7 @@ open class ChoiceView: UIView {
         contentView.frame = bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
-
+    
     open override func updateConstraints() {
         let hasText = text != nil && text!.isNotEmpty
         let hasImage = image != nil

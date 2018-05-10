@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080ACEB920A4302E00CEBB3B /* ABChoiceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080ACEAE20A42E6400CEBB3B /* ABChoiceView.framework */; };
+		080ACEBA20A4302E00CEBB3B /* ABChoiceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 080ACEAE20A42E6400CEBB3B /* ABChoiceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0860A82F2095E20100C53ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A82E2095E20100C53ABC /* AppDelegate.swift */; };
 		0860A8312095E20100C53ABC /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A8302095E20100C53ABC /* ExampleViewController.swift */; };
 		0860A8342095E20100C53ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860A8322095E20100C53ABC /* Main.storyboard */; };
@@ -14,8 +16,6 @@
 		0860A8392095E20400C53ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0860A8372095E20400C53ABC /* LaunchScreen.storyboard */; };
 		0860A8442095E20400C53ABC /* ABChoiceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A8432095E20400C53ABC /* ABChoiceExampleTests.swift */; };
 		0860A84F2095E20400C53ABC /* ABChoiceExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860A84E2095E20400C53ABC /* ABChoiceExampleUITests.swift */; };
-		0860A8692095E3AA00C53ABC /* ABChoiceView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0860A8682095E3AA00C53ABC /* ABChoiceView.framework */; };
-		0860A86A2095E3AA00C53ABC /* ABChoiceView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0860A8682095E3AA00C53ABC /* ABChoiceView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08FA78A72098592C00BDFA4F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; };
 		08FA78A82098592C00BDFA4F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FA789D209855EB00BDFA4F /* Quick.framework */; };
 		08FA78AA2098593C00BDFA4F /* Nimble.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 08FA789E209855EB00BDFA4F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -44,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0860A86B2095E3AB00C53ABC /* Embed Frameworks */ = {
+		080ACEBB20A4302E00CEBB3B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0860A86A2095E3AA00C53ABC /* ABChoiceView.framework in Embed Frameworks */,
+				080ACEBA20A4302E00CEBB3B /* ABChoiceView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		080ACEAE20A42E6400CEBB3B /* ABChoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABChoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0860A82B2095E20100C53ABC /* ABChoiceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABChoiceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0860A82E2095E20100C53ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0860A8302095E20100C53ABC /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		0860A84A2095E20400C53ABC /* ABChoiceExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABChoiceExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0860A84E2095E20400C53ABC /* ABChoiceExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABChoiceExampleUITests.swift; sourceTree = "<group>"; };
 		0860A8502095E20400C53ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0860A8682095E3AA00C53ABC /* ABChoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABChoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C1123520A1848000E19211 /* demo0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo0.png; path = /Users/aviv/Aviv/ABChoiceview/demo0.png; sourceTree = "<absolute>"; };
 		08C1123620A1848000E19211 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo1.png; path = /Users/aviv/Aviv/ABChoiceview/demo1.png; sourceTree = "<absolute>"; };
 		08C1123720A1848000E19211 /* demo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = demo2.png; path = /Users/aviv/Aviv/ABChoiceview/demo2.png; sourceTree = "<absolute>"; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0860A8692095E3AA00C53ABC /* ABChoiceView.framework in Frameworks */,
+				080ACEB920A4302E00CEBB3B /* ABChoiceView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 		0860A8222095E20100C53ABC = {
 			isa = PBXGroup;
 			children = (
-				0860A8682095E3AA00C53ABC /* ABChoiceView.framework */,
+				080ACEAE20A42E6400CEBB3B /* ABChoiceView.framework */,
 				0860A82D2095E20100C53ABC /* ABChoiceExample */,
 				0860A8422095E20400C53ABC /* ABChoiceExampleTests */,
 				0860A84D2095E20400C53ABC /* ABChoiceExampleUITests */,
@@ -217,7 +217,7 @@
 				0860A8272095E20100C53ABC /* Sources */,
 				0860A8282095E20100C53ABC /* Frameworks */,
 				0860A8292095E20100C53ABC /* Resources */,
-				0860A86B2095E3AB00C53ABC /* Embed Frameworks */,
+				080ACEBB20A4302E00CEBB3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

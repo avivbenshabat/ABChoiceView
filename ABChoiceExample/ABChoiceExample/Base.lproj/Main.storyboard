@@ -18,7 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prn-H7-o8u" customClass="ChoiceView" customModule="ABChoiceView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec1-KV-o2b" customClass="ABChoiceView" customModule="ABChoiceView">
+                                <rect key="frame" x="152" y="36" width="70" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7UC-hj-swA"/>
+                                    <constraint firstAttribute="width" constant="70" id="F9D-0j-4U2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="apple"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="checkImage" value="check_x"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="hello"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="prn-H7-o8u" customClass="ABChoiceView" customModule="ABChoiceView">
                                 <rect key="frame" x="97" y="120" width="180" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ChoiceViewID"/>
@@ -27,10 +41,9 @@
                                     <constraint firstAttribute="height" constant="180" id="dRj-u4-tAb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="apple"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Apple"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="maskWhenChecked" value="NO"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="apple"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-RC-tGA">
@@ -101,6 +114,8 @@
                             <constraint firstItem="e5l-RC-tGA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HY3-gT-85W"/>
                             <constraint firstItem="e5l-RC-tGA" firstAttribute="top" secondItem="prn-H7-o8u" secondAttribute="bottom" constant="40" id="KJq-ha-CzE"/>
                             <constraint firstItem="prn-H7-o8u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="N4R-Of-epQ"/>
+                            <constraint firstItem="ec1-KV-o2b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bve-c6-W7f"/>
+                            <constraint firstItem="ec1-KV-o2b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="epV-Xw-rpj"/>
                             <constraint firstItem="prn-H7-o8u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="qFk-hL-wWA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e5l-RC-tGA" secondAttribute="bottom" constant="40" id="qc2-4T-Dve"/>
                         </constraints>
@@ -116,5 +131,6 @@
     </scenes>
     <resources>
         <image name="apple" width="250" height="250"/>
+        <image name="check_x" width="25" height="25"/>
     </resources>
 </document>

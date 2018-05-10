@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		08062CA92094B1E200984660 /* ABChoiceView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08062C9B2094B1E200984660 /* ABChoiceView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		080ACEC120A43DD800CEBB3B /* ABChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080ACEC020A43DD800CEBB3B /* ABChoiceView.swift */; };
 		085ABFC220A06A1B0064D1D8 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 085ABFC120A06A1A0064D1D8 /* check@2x.png */; };
 		08E906252095B53400689FFA /* BorderPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906242095B53400689FFA /* BorderPolicy.swift */; };
-		08E906272095B56E00689FFA /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906262095B56E00689FFA /* ChoiceView.swift */; };
 		08E9062B2095B57700689FFA /* DashBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906282095B57700689FFA /* DashBorderView.swift */; };
 		08E9062C2095B57700689FFA /* DiagonalBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E906292095B57700689FFA /* DiagonalBackgroundView.swift */; };
 		08E9062D2095B57700689FFA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E9062A2095B57700689FFA /* Utils.swift */; };
@@ -21,9 +21,9 @@
 		08062C982094B1E200984660 /* ABChoiceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ABChoiceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08062C9B2094B1E200984660 /* ABChoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABChoiceView.h; sourceTree = "<group>"; };
 		08062C9C2094B1E200984660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		080ACEC020A43DD800CEBB3B /* ABChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABChoiceView.swift; sourceTree = "<group>"; };
 		085ABFC120A06A1A0064D1D8 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
 		08E906242095B53400689FFA /* BorderPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderPolicy.swift; sourceTree = "<group>"; };
-		08E906262095B56E00689FFA /* ChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		08E906282095B57700689FFA /* DashBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBorderView.swift; sourceTree = "<group>"; };
 		08E906292095B57700689FFA /* DiagonalBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiagonalBackgroundView.swift; sourceTree = "<group>"; };
 		08E9062A2095B57700689FFA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			children = (
 				08062C9B2094B1E200984660 /* ABChoiceView.h */,
 				08062C9C2094B1E200984660 /* Info.plist */,
-				08E906262095B56E00689FFA /* ChoiceView.swift */,
+				080ACEC020A43DD800CEBB3B /* ABChoiceView.swift */,
 				085ABFC020A069780064D1D8 /* Assets */,
 				08FA78BF209887BD00BDFA4F /* Views */,
 				08FA78C0209887C600BDFA4F /* Utils */,
@@ -191,7 +191,7 @@
 				08E9062B2095B57700689FFA /* DashBorderView.swift in Sources */,
 				08E9062C2095B57700689FFA /* DiagonalBackgroundView.swift in Sources */,
 				08E906252095B53400689FFA /* BorderPolicy.swift in Sources */,
-				08E906272095B56E00689FFA /* ChoiceView.swift in Sources */,
+				080ACEC120A43DD800CEBB3B /* ABChoiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +325,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MWXNT78G96;
+				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -352,7 +352,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MWXNT78G96;
+				DEVELOPMENT_TEAM = QE7TW8Z9YQ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

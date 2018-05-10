@@ -11,7 +11,7 @@ import ABChoiceView
 
 class ExampleViewController: UIViewController {
 
-    @IBOutlet var choiceView: ChoiceView!
+    @IBOutlet var choiceView: ABChoiceView!
     
     var currentState: State = .apple
     
@@ -73,7 +73,7 @@ class ExampleViewController: UIViewController {
         if defaultMask {
             choiceView.maskData = DiagonalBackgroundView.Data(lineWidth: 8.0, spacing: 4.0, lineColor: UIColor(hexString: "#868686", alpha: 0.7), backgroundColor: UIColor(hexString: "#C8C8C8", alpha: 0.5))
         } else {
-            choiceView.maskData = ChoiceView.defaultCoverBackgroundData
+            choiceView.maskData = ABChoiceView.defaultCoverBackgroundData
         }
         sender.tag = defaultMask ? 1 : 0
     }

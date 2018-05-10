@@ -12,7 +12,7 @@ import Nimble_Snapshots
 @testable import ABChoiceView
 @testable import ABChoiceExample
 
-extension ChoiceView {
+extension ABChoiceView {
     
     func reset() {
         self.image = UIImage(named: "apple")
@@ -35,7 +35,7 @@ class ABChoiceExampleTests: QuickSpec {
         let viewController = UIStoryboard(name: "Main", bundle: nil)
             .instantiateViewController(withIdentifier: "ExampleViewController") as! ExampleViewController
         
-        var choiceView: ChoiceView!
+        var choiceView: ABChoiceView!
         
         beforeEach {
             _ = viewController.view  // calls viewDidLoad()
