@@ -64,7 +64,7 @@ Add one of the following lines to your Podfile depending on your Swift version:
 
 ```ruby
 target 'MyApp' do
-  pod 'ABChoiceView', '~> 1.0.2'
+  pod 'ABChoiceView', '~> 1.0.3'
 end
 ```
 
@@ -123,7 +123,7 @@ Note: If you don't set an id, the callback will return the view's text as and id
 
 #### Special thanks to [Efrat Silberhaft](https://www.behance.net/efratbarzilai) for the UX/UI design!
 
-### Enjoy!
+### Enjoy...!
 
 [default0]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo00.png "Default ChoiceView"
 [default1]: https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/demo01.png "Default ChoiceView"
