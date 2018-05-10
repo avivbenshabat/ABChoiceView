@@ -82,7 +82,7 @@ github "avivbenshabat/ABChoiceView"
 
 Drag a `UIView` into your storyboard. Open the Identity Inspetcor and set `ABChoiceView` as both the class and module.
 
-![ib-demo.gif](https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/autolayouts.png)
+![interfacebuilder](https://github.com/avivbenshabat/ABChoiceView/blob/master/DemoImages/autolayouts.gif)
 
 
 ### Code
