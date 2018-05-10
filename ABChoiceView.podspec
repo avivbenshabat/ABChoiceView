@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name = "ABChoiceView"
-spec.version = "1.0.2"
+spec.version = "1.0.3"
 spec.summary = "ABChoiceView is a user friendly multi-selection view library for iOS (written in Swift)."
 spec.homepage = "https://github.com/avivbenshabat/ABChoiceView"
 spec.license = { type: 'MIT', file: 'LICENSE' }
