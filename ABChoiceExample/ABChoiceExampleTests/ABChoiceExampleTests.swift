@@ -12,20 +12,6 @@ import Nimble_Snapshots
 @testable import ABChoiceView
 @testable import ABChoiceExample
 
-extension ABChoiceView {
-    
-    func reset() {
-        self.image = UIImage(named: "apple")
-        self.text = "Apple"
-        self.checked = false
-        self.checkImage = nil
-        self.maskWhenChecked = false
-        self.borderPolicy = .dashedWhenUnchecked
-        self.font = UIFont.systemFont(ofSize: 20.0, weight: .light)
-    }
-    
-}
-
 class ABChoiceExampleTests: QuickSpec {
     
     let record = false
@@ -40,7 +26,7 @@ class ABChoiceExampleTests: QuickSpec {
         beforeEach {
             _ = viewController.view  // calls viewDidLoad()
             choiceView = viewController.choiceView
-            choiceView.reset()
+            self.reset(choiceView)
         }
         
         describe("unchecked view") {
@@ -143,6 +129,16 @@ class ABChoiceExampleTests: QuickSpec {
             }
             
         }
+    }
+    
+    func reset(_ view: ABChoiceView) {
+        view.image = UIImage(named: "apple")
+        view.text = "Apple"
+        view.checked = false
+        view.checkImage = nil
+        view.maskWhenChecked = false
+        view.borderPolicy = .dashedWhenUnchecked
+        view.font = UIFont.systemFont(ofSize: 20.0, weight: .light)
     }
     
     func capture() -> Snapshot {
