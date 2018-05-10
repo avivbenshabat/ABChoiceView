@@ -64,7 +64,7 @@ Add one of the following lines to your Podfile depending on your Swift version:
 
 ```ruby
 target 'MyApp' do
-  pod 'ABChoiceView', '~> 1.0.3'
+  pod 'ABChoiceView', '~> 1.0.2'
 end
 ```
 
