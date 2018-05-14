@@ -1,6 +1,11 @@
 # ABChoiceView
 
-[![Build Status](https://travis-ci.com/avivbenshabat/ABChoiceView.svg?branch=master)](https://travis-ci.com/avivbenshabat/ABChoiceView) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE) <img src="https://img.shields.io/badge/Swift-4.1-orange.svg" />
+[![Build Status](https://travis-ci.com/avivbenshabat/ABChoiceView.svg?branch=master)](https://travis-ci.com/avivbenshabat/ABChoiceView) 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 
+[![CocoaPods Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/ABChoiceView/badge.png)](https://cocoapod-badges.herokuapp.com/v/ABChoiceView/badge.png)
+[![Swift Version](https://img.shields.io/badge/Swift-4.1-orange.svg)](https://img.shields.io/badge/Swift-4.1-orange.svg) 
+[![License](https://img.shields.io/cocoapods/l/BadgeSwift.svg?style=flat)](/LICENSE)
+
 ---
 ##### ABChoiceView is a Swift written, custom view library for iOS 9.1+
 ##### ABChoiceView is very flexible and customable. It can be used in different sizes and shapes and every feature in it is modular.</br>
